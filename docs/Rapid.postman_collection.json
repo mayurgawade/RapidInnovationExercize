@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "d62e6b45-f121-40ee-a226-8cbce87d5775",
+		"name": "Rapid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPlayerByCoachName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/players/mayur gawade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players",
+						"mayur gawade"
+					],
+					"query": [
+						{
+							"key": "playerName",
+							"value": "shekhar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPlayersAdmin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/players/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPlayerByCoach",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coach\": \"Ronaldo\",\n    \"sport\": \"football\",\n    \"playerDetails\": {\n        \"playerName\": \"messi\",\n        \"matchesPlayed\": 50,\n        \"matchesWon\": 23,\n        \"matchesLost\": 17\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/players/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
